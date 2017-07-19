@@ -3,7 +3,7 @@ include SendGrid
 
 from = Email.new(email: 'test@example.com')
 subject = 'Hello World from the SendGrid Ruby Library!'
-to = Email.new(email: 'test@example.com')
+to = Email.new(email: 'tabe@salesforce.com')
 content = Content.new(type: 'text/plain', value: 'Hello, Email!')
 mail = Mail.new(from, subject, to, content)
 
@@ -12,3 +12,5 @@ response = sg.client.mail._('send').post(request_body: mail.to_json)
 puts response.status_code
 puts response.body
 puts response.headers
+
+logger.info "Run send_mail.rb"
