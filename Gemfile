@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 group :production do
   gem 'pg'
   gem 'newrelic_rpm'
+  gem 'sendgrid-ruby'
 end
 
 group :development, :test do
