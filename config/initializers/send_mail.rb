@@ -13,4 +13,4 @@ puts response.status_code
 puts response.body
 puts response.headers
 
-logger.info "Run send_mail.rb"
+puts "Run send_mail.rb"
